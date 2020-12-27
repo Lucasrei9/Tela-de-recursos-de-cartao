@@ -1,0 +1,156 @@
+ /* reset da pagina */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body { 
+    background-color: rgb(253, 254, 255);
+ }
+
+
+/* inicio da modificação do header para mobile na tela de 375px */
+
+.top {
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.466);
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.logo01 {
+    font-family: sans-serif;
+    font-size: 28px;
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.692);
+    margin-bottom: 15px;
+}
+
+.logo02 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16.9px;
+    color: rgba(0, 0, 0, 0.308);
+    text-align: center;
+    width: 350px;
+    height: 60px;
+}
+
+
+
+/* inicio do desenvolvimento do main, também pra tela de 375px */
+
+
+.container {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square {
+    position: relative;
+    width: 310px;
+    height: 230px;
+    background-color: white;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgb(208, 206, 228);
+    
+}
+
+.supervisor {
+    border-top: 5px solid rgb(52, 204, 204);
+}
+
+.team {
+    border-top: 5px solid rgb(218, 12, 57);
+}
+
+.karma {
+    border-top: 5px solid orange;
+}
+
+.calculator {
+    border-top: 5px solid rgb(52, 156, 204);
+}
+
+/* area de edição dos textos objetos acima  */
+
+.text00 {
+    width: 200px;
+    height: 35px;
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.text01 {
+    margin: auto;
+    width: 250px;
+    height: 35px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.image {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+
+
+/* inicio da modificação para desktop com a tela de 1024px ate o infinito kkk, 
+o recomendado é 1440px */
+
+@media screen and (min-width: 1024px) {
+     
+
+    .logo {
+        width: 420px;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .logo01 {
+        width: 420px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .logo02 {
+        width: 550px;
+    }
+
+    .end {
+        display: flex;
+        transform: translate(0%, -150%)
+    }
+
+    .karma {
+        margin-right: 180px;
+    }
+
+    .calculator {
+        margin-left: 180px;
+    }
+
+}
